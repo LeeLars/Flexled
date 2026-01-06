@@ -7,13 +7,14 @@
 ## INHOUDSOPGAVE
 
 1. [Project Overview](#1-project-overview)
-2. [Tech Stack](#2-tech-stack)
-3. [Design System](#3-design-system)
-4. [Sitemap (84 pagina's)](#4-sitemap)
-5. [CMS Structuur](#5-cms-structuur)
-6. [Lead Management](#6-lead-management)
-7. [Implementatie Fases](#7-implementatie-fases)
-8. [Deployment](#8-deployment)
+2. [Code Standaarden & Structuur](#2-code-standaarden--structuur)
+3. [Tech Stack](#3-tech-stack)
+4. [Design System](#4-design-system)
+5. [Sitemap (84 pagina's)](#5-sitemap)
+6. [CMS Structuur](#6-cms-structuur)
+7. [Lead Management](#7-lead-management)
+8. [Implementatie Fases](#8-implementatie-fases)
+9. [Deployment](#9-deployment)
 
 ---
 
@@ -38,7 +39,194 @@ Maximale lead generatie via SEO-geoptimaliseerde pagina's voor LED-scherm verhuu
 
 ---
 
-## 2. TECH STACK
+## 2. CODE STANDAARDEN & STRUCTUUR
+
+> ⚠️ **KRITIEK:** Een goede mappenstructuur is van waanzinnig groot belang. Alles moet goed gestructureerd en gecodeerd zijn voor schaalbaarheid, onderhoudbaarheid en samenwerking.
+
+### Waarom Structuur Essentieel Is
+
+1. **Schaalbaarheid** - 84 pagina's vereist een voorspelbare structuur
+2. **Onderhoudbaarheid** - Makkelijk bugs fixen en features toevoegen
+3. **Samenwerking** - Iedereen weet waar alles staat
+4. **Performance** - Goede code-splitting en lazy loading
+5. **SEO** - Consistente URL structuur voor Google
+
+### Mappenstructuur
+
+```
+flexled/
+├── src/
+│   ├── app/                          # Next.js App Router
+│   │   ├── (website)/                # Public website routes
+│   │   │   ├── page.tsx              # Homepage
+│   │   │   ├── layout.tsx            # Website layout
+│   │   │   ├── globals.css           # Global styles
+│   │   │   ├── offerte/
+│   │   │   │   └── page.tsx          # Lead formulier
+│   │   │   ├── contact/
+│   │   │   ├── over-ons/
+│   │   │   ├── ledscherm-huren/
+│   │   │   │   ├── page.tsx          # Hub pagina
+│   │   │   │   ├── [formaat]/        # Dynamic: 6m2, 8m2, 16m2
+│   │   │   │   ├── west-vlaanderen/
+│   │   │   │   │   ├── page.tsx      # Provincie hub
+│   │   │   │   │   └── [stad]/       # Dynamic: brugge, kortrijk, etc.
+│   │   │   │   └── oost-vlaanderen/
+│   │   │   │       ├── page.tsx
+│   │   │   │       └── [stad]/
+│   │   │   ├── toepassingen/
+│   │   │   │   ├── page.tsx
+│   │   │   │   └── [slug]/           # Dynamic: festival, sport, etc.
+│   │   │   ├── kennisbank/
+│   │   │   │   ├── page.tsx
+│   │   │   │   └── [slug]/
+│   │   │   └── realisaties/
+│   │   │       ├── page.tsx
+│   │   │       └── [slug]/
+│   │   ├── (payload)/                # CMS Admin routes
+│   │   │   ├── admin/
+│   │   │   ├── api/
+│   │   │   └── layout.tsx
+│   │   └── api/                      # Custom API routes
+│   │       └── leads/
+│   │           └── route.ts          # Lead submission endpoint
+│   │
+│   ├── collections/                  # Payload CMS Collections
+│   │   ├── Leads.ts                  # Lead management
+│   │   ├── Pages.ts                  # Dynamic pages
+│   │   ├── Products.ts               # LED-schermen
+│   │   ├── Steden.ts                 # 58 steden
+│   │   ├── Realisaties.ts            # Portfolio
+│   │   ├── Media.ts                  # Afbeeldingen
+│   │   └── Users.ts                  # Admin users
+│   │
+│   ├── components/                   # React Components
+│   │   ├── ui/                       # Basis UI componenten
+│   │   │   ├── Button.tsx
+│   │   │   ├── Card.tsx
+│   │   │   ├── Input.tsx
+│   │   │   └── ...
+│   │   ├── layout/                   # Layout componenten
+│   │   │   ├── Header.tsx
+│   │   │   ├── Footer.tsx
+│   │   │   ├── Navigation.tsx
+│   │   │   └── MobileMenu.tsx
+│   │   ├── sections/                 # Page sections
+│   │   │   ├── Hero.tsx
+│   │   │   ├── ProductGrid.tsx
+│   │   │   ├── USPSection.tsx
+│   │   │   ├── CTASection.tsx
+│   │   │   ├── FAQ.tsx
+│   │   │   ├── Testimonials.tsx
+│   │   │   └── NearbyLocations.tsx
+│   │   └── forms/                    # Formulieren
+│   │       ├── LeadForm.tsx
+│   │       └── ContactForm.tsx
+│   │
+│   ├── lib/                          # Utilities & helpers
+│   │   ├── payload.ts                # Payload client
+│   │   ├── utils.ts                  # Helper functions
+│   │   └── validations.ts            # Zod schemas
+│   │
+│   ├── hooks/                        # Custom React hooks
+│   │   └── useLeadForm.ts
+│   │
+│   ├── types/                        # TypeScript types
+│   │   └── index.ts
+│   │
+│   └── payload.config.ts             # Payload configuratie
+│
+├── public/                           # Static assets
+│   ├── images/
+│   ├── icons/
+│   └── fonts/
+│
+├── .env.local                        # Environment variables (niet in git)
+├── .env.example                      # Voorbeeld env file
+├── .gitignore
+├── next.config.ts
+├── tailwind.config.ts
+├── tsconfig.json
+├── package.json
+└── MASTERPLAN.md                     # Dit document
+```
+
+### Naamgeving Conventies
+
+| Type | Conventie | Voorbeeld |
+|------|-----------|-----------|
+| **Componenten** | PascalCase | `ProductCard.tsx` |
+| **Hooks** | camelCase met `use` prefix | `useLeadForm.ts` |
+| **Utilities** | camelCase | `formatPrice.ts` |
+| **Types** | PascalCase | `Lead`, `Product` |
+| **CSS classes** | kebab-case | `btn-primary` |
+| **Routes** | kebab-case | `/ledscherm-huren/` |
+| **Collections** | PascalCase | `Leads.ts` |
+
+### Code Principes
+
+#### ✅ DO's
+- **Single Responsibility** - Elk bestand heeft één doel
+- **DRY** - Don't Repeat Yourself, hergebruik componenten
+- **Type Safety** - Altijd TypeScript types gebruiken
+- **Consistentie** - Zelfde patronen overal
+- **Kleine componenten** - Max 150-200 regels per bestand
+- **Beschrijvende namen** - `ProductCard` niet `Card1`
+
+#### ❌ DON'Ts
+- Geen hardcoded strings (gebruik CMS of constants)
+- Geen inline styles (gebruik Tailwind classes)
+- Geen `any` types in TypeScript
+- Geen business logic in componenten (gebruik hooks/lib)
+- Geen duplicate code (maak herbruikbare componenten)
+
+### Import Volgorde
+
+```typescript
+// 1. React/Next imports
+import { useState } from 'react'
+import Link from 'next/link'
+
+// 2. Third-party libraries
+import { z } from 'zod'
+
+// 3. Internal imports - absolute paths
+import { Button } from '@/components/ui/Button'
+import { formatPrice } from '@/lib/utils'
+
+// 4. Types
+import type { Product } from '@/types'
+
+// 5. Styles (indien nodig)
+import './styles.css'
+```
+
+### Component Template
+
+```typescript
+// src/components/sections/ProductCard.tsx
+import Link from 'next/link'
+import Image from 'next/image'
+import { Button } from '@/components/ui/Button'
+import type { Product } from '@/types'
+
+interface ProductCardProps {
+  product: Product
+  showPrice?: boolean
+}
+
+export function ProductCard({ product, showPrice = true }: ProductCardProps) {
+  return (
+    <div className="card">
+      {/* Component content */}
+    </div>
+  )
+}
+```
+
+---
+
+## 3. TECH STACK
 
 | Component | Tool |
 |-----------|------|
