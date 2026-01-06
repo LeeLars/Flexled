@@ -1372,3 +1372,146 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.875rem;
   line-height: 1.6;
 }
+
+/* ==================== LOCAL SEO PAGES ==================== */
+.local-usps {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .local-usps {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.local-usp {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: var(--color-background);
+  border-radius: 1rem;
+}
+
+.local-usp svg {
+  width: 24px;
+  height: 24px;
+  color: var(--color-primary);
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.local-usp div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.local-usp strong {
+  font-weight: 600;
+}
+
+.local-usp span {
+  color: var(--color-muted);
+  font-size: 0.875rem;
+}
+
+/* Cities Grid */
+.cities-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .cities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .cities-grid.highlight {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.city-card {
+  display: block;
+  background: var(--color-background-dark);
+  border-radius: 1rem;
+  overflow: hidden;
+  text-decoration: none;
+  transition: all 0.2s;
+  border: 2px solid transparent;
+}
+
+.city-card:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-4px);
+}
+
+.city-card .city-image {
+  aspect-ratio: 16/10;
+  background: var(--color-background-light);
+}
+
+.city-card .city-content {
+  padding: 1rem;
+}
+
+.city-card h3 {
+  color: var(--color-foreground);
+  margin-bottom: 0.25rem;
+}
+
+.city-card span {
+  color: var(--color-primary);
+  font-size: 0.875rem;
+}
+
+/* Cities List */
+.cities-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.city-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: var(--color-background);
+  border-radius: 9999px;
+  color: var(--color-foreground);
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: all 0.2s;
+}
+
+.city-link:hover {
+  background: var(--color-primary);
+  color: var(--color-background);
+}
+
+/* Nearby Cities */
+.nearby-cities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.nearby-city {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--color-background);
+  border-radius: 0.5rem;
+  color: var(--color-foreground);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.nearby-city:hover {
+  background: var(--color-primary);
+  color: var(--color-background);
+}
