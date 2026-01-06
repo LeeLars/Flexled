@@ -1,0 +1,210 @@
+Fase,URL,Paginanaam,Doel Keywords,Minimum woorden,H1 Suggestie,Belangrijkste Content Elementen,Interne Links Naar,Prioriteit,Opmerkingen
+FASE 1,/,Homepage,"ledscherm huren, LED scherm verhuur West-Vlaanderen, Oost-Vlaanderen",500-700,LED-scherm huren in West- & Oost-Vlaanderen | FlexLED,"• Hero met USP's (mobiel, vanaf-prijs, regio)
+• 3 schermformaten (6m², 8m², 16m²) met foto + specs
+• Toepassingen overview
+• Klantervaringen/reviews
+• CTA's: ""Vraag offerte"" + ""Bel direct""
+• Trust: aantal events, jaren ervaring
+• Foto's van schermen in actie","→ /ledscherm-huren/
+→ /ledscherm-huren/6m2/
+→ /ledscherm-huren/8m2/
+→ /ledscherm-huren/16m2/
+→ /offerte/",🔴 KRITIEK,Dit is je belangrijkste landingspagina voor organisch verkeer
+FASE 1,/ledscherm-huren/,Ledscherm Huren - Hub,"ledscherm huren, mobiel LED scherm verhuur",400-600,LED-scherm huren - Alle formaten & prijzen,"• Intro: wat bieden we aan
+• Alle 3 formaten met specs + vanaf-prijzen
+• Voordelen LED vs andere opties
+• Proces: aanvraag → levering → support
+• FAQ sectie (5-7 vragen)
+• CTA naar offerte","→ /ledscherm-huren/6m2/
+→ /ledscherm-huren/8m2/
+→ /ledscherm-huren/16m2/
+→ /toepassingen/
+→ /offerte/",🔴 KRITIEK,Hub die alle verhuur-paginas verbindt
+FASE 1,/ledscherm-huren/6m2/,LED-scherm 6m² huren,"6m2 LED scherm, klein ledscherm huren",300-400,LED-scherm 6m² huren - Compact & mobiel,"• Specs: resolutie, helderheid, afmetingen trailer
+• Ideale toepassingen (lokale events, kleine publiek)
+• Foto's + eventueel video
+• Prijs ""vanaf €..."" duidelijk
+• Technische details (360° draaibaar?)
+• CTA: offerte + contact","← /ledscherm-huren/
+→ /offerte/
+→ /toepassingen/bedrijfsevenement/",🔴 KRITIEK,Concrete productpagina
+FASE 1,/ledscherm-huren/8m2/,LED-scherm 8m² huren,"8m2 LED scherm huren, middelgroot ledscherm",300-400,LED-scherm 8m² huren - Veelzijdig & opvallend,"• Specs: resolutie, helderheid, afmetingen
+• Ideale toepassingen (festivals, sport, bedrijf)
+• Foto's van 8m² in gebruik
+• Prijsindicatie
+• Vergelijking met 6m² en 16m²
+• CTA: offerte","← /ledscherm-huren/
+→ /offerte/
+→ /toepassingen/festival/",🔴 KRITIEK,Meest populaire formaat - benadruk dit
+FASE 1,/ledscherm-huren/16m2/,LED-scherm 16m² huren,"16m2 LED scherm, groot ledscherm huren",300-400,LED-scherm 16m² huren - XXL impact,"• Specs: resolutie, helderheid, afmetingen
+• Ideale voor grote publiek (>500 personen)
+• Toepassingen: grote festivals, sport, WK/EK
+• Indrukwekkende foto's
+• Premium positionering
+• CTA: offerte","← /ledscherm-huren/
+→ /offerte/
+→ /toepassingen/sportwedstrijd/",🔴 KRITIEK,Premium product - showcase grote events
+FASE 1,/ledscherm-huren/west-vlaanderen/,LED-scherm huren West-Vlaanderen,"ledscherm huren West-Vlaanderen, Brugge, Kortrijk",400-500,LED-scherm huren in West-Vlaanderen - Lokale service,"• Intro: gevestigd in Oostkamp/regio
+• Snelle levering door West-Vlaanderen
+• Noem 8-12 steden/gemeentes expliciet
+• Cases van events in West-Vl (als beschikbaar)
+• Geen transportkosten binnen regio
+• Lokale referenties
+• CTA met telefoonnummer prominent","← /ledscherm-huren/
+→ /ledscherm-huren/6m2/
+→ /realisaties/
+→ /offerte/",🔴 KRITIEK,Cruciale lokale SEO-pagina - hier moet je #1 staan
+FASE 1,/ledscherm-huren/oost-vlaanderen/,LED-scherm huren Oost-Vlaanderen,"ledscherm huren Oost-Vlaanderen, Gent, Oudenaarde",400-500,LED-scherm huren in Oost-Vlaanderen - Snel geleverd,"• Intro: ook in Oost-Vlaanderen actief
+• Snelle levering, korte afstand vanaf Oostkamp
+• Noem 8-12 steden (Gent, Oudenaarde, Aalst, etc.)
+• Ervaring met events in Oost-Vl
+• Prijs/transportinfo
+• CTA","← /ledscherm-huren/
+→ /ledscherm-huren/6m2/
+→ /realisaties/
+→ /offerte/",🔴 KRITIEK,Tweede lokale focus - ook hier top 3 bereiken
+FASE 1,/offerte/,Offerte Aanvragen,N/A (conversie pagina),200-300,Vraag nu een vrijblijvende offerte aan,"• Simpel formulier:
+  - Naam + bedrijf
+  - Email + telefoon
+  - Type event
+  - Gewenste datum
+  - Schermformaat (dropdown)
+  - Bericht
+• Verwachting: ""Reactie binnen 24u""
+• Trust elementen (reviews)
+• Alternatief: bel direct","← Alle pagina's
+→ /contact/",🔴 KRITIEK,Belangrijkste conversie-pagina
+FASE 1,/contact/,Contact,N/A,200-300,Contact opnemen met FlexLED,"• Adres + Google Maps
+• Telefoon + email
+• Openingstijden (indien van toepassing)
+• Contactformulier
+• Link naar offerte-pagina",← Footer van alle pagina's,🟠 HOOG,Standaard contactpagina
+FASE 1,/over-ons/,Over FlexLED,N/A (brand),300-400,Over FlexLED - LED-schermen met zorg,"• Wie zijn jullie
+• Waarom LED-schermen
+• Ervaring / aantal events
+• Team (optioneel met foto)
+• Waarom klanten voor jullie kiezen
+• USP's herhalen","→ /contact/
+→ /offerte/",🟠 HOOG,Trust & brand building
+FASE 1,/privacy-policy/,Privacy Policy,N/A,800-1200,Privacy Policy | FlexLED,"• GDPR compliant
+• Welke data verzamelen jullie
+• Hoe gebruiken jullie data
+• Cookies
+• Rechten van gebruikers
+• Contact voor privacy-vragen",← Footer,🟡 MEDIUM,Juridisch verplicht
+FASE 1,/algemene-voorwaarden/,Algemene Voorwaarden,N/A,1000-1500,Algemene Voorwaarden | FlexLED,"• Toepasselijkheid
+• Offertes & prijzen
+• Annulering
+• Aansprakelijkheid
+• Schade
+• Betaling
+• Geschillen",← Footer,🟡 MEDIUM,Beschermt jullie juridisch bij verhuur
+,,,,,,,,,
+FASE 2,/mobiel-ledscherm-huren/,Mobiel LED-scherm huren,"mobiel ledscherm, LED scherm aanhangwagen",400-500,Mobiel LED-scherm huren - Flexibel inzetbaar,"• Uitleg: mobiel = op trailer/aanhangwagen
+• Voordelen vs vast scherm
+• Alle 3 formaten zijn mobiel bij FlexLED
+• Toepassingen: events, promotie, tijdelijke reclame
+• Foto's van trailers
+• Makkelijk verplaatsbaar
+• CTA","← /
+→ /ledscherm-huren/6m2/
+→ /ledscherm-huren/8m2/
+→ /toepassingen/",🟠 HOOG,Belangrijk keyword - veel gezocht
+FASE 2,/toepassingen/,Toepassingen LED-schermen,"LED scherm voor evenement, toepassingen",400-500,Toepassingen voor LED-schermen - Veelzijdige inzet,"• Overview van 5-6 toepassingen met foto
+• Links naar detail-pagina's
+• Inspiratie voor klanten
+• Cases of voorbeelden
+• CTA per toepassing","→ Alle toepassing detail pagina's
+→ /offerte/",🟠 HOOG,Hub voor use-cases
+FASE 2,/toepassingen/bedrijfsevenement/,LED-scherm bedrijfsevenement,"ledscherm bedrijfsevent, presentatie",300-400,LED-scherm voor bedrijfsevenementen,"• Waarom LED bij bedrijfsevents
+• Product launches, presentaties, teambuilding
+• Welk formaat (meestal 6m² of 8m²)
+• B2B focus
+• Case/foto van bedrijfsevent
+• CTA: offerte","← /toepassingen/
+→ /ledscherm-huren/6m2/
+→ /offerte/",🟠 HOOG,B2B doelgroep - vaak betere marges
+FASE 2,/toepassingen/festival/,LED-scherm voor festivals,"ledscherm festival, outdoor LED scherm",300-400,LED-scherm huren voor festivals - Extra beleving,"• Voordelen LED op festivals
+• Welke formaten geschikt (8m² + 16m²)
+• Weersbestendig
+• Content: line-up, sponsors, live video
+• Festival cases
+• CTA","← /toepassingen/
+→ /ledscherm-huren/8m2/
+→ /ledscherm-huren/16m2/
+→ /offerte/",🟠 HOOG,Grote markt in Vlaanderen
+FASE 2,/toepassingen/sportwedstrijd/,LED-scherm sportwedstrijden,"groot scherm voetbal, LED scherm WK EK",300-400,LED-scherm voor sportwedstrijden - Live kijkervaring,"• Perfect voor WK/EK voetbal, Ronde van Vlaanderen
+• Publiek voetbalwedstrijden
+• Grote formaten (16m²)
+• Outdoor + indoor mogelijk
+• Sport event cases
+• CTA","← /toepassingen/
+→ /ledscherm-huren/16m2/
+→ /offerte/",🟠 HOOG,Seizoensgebonden maar veel vraag bij grote events
+FASE 2,/toepassingen/beurs-of-expo/,LED-scherm beurs & expo,"ledscherm beursstand, expo LED wall",300-400,LED-scherm voor beurzen & expo's - Val op,"• Opvallen tussen andere stands
+• Meestal indoor (6m² of 8m²)
+• Dynamische content trekt aandacht
+• Beurs cases/foto's
+• B2B target
+• CTA","← /toepassingen/
+→ /ledscherm-huren/6m2/
+→ /offerte/",🟡 MEDIUM,Niche maar stabiele vraag
+FASE 2,/toepassingen/winkel-of-showroom/,LED-scherm winkel & showroom,"reclame scherm winkel, LED display showroom",300-400,LED-scherm voor winkels & showrooms - Digitale etalage,"• Retail toepassingen
+• Permanente of tijdelijke verhuur
+• Indoor focus
+• Product presentaties, promoties
+• Retail cases
+• CTA","← /toepassingen/
+→ /ledscherm-huren/6m2/
+→ /offerte/",🟡 MEDIUM,Langere verhuurperiodes mogelijk
+FASE 2,/realisaties/,Realisaties & Projecten,N/A (trust building),300-400,Onze realisaties - LED-schermen in actie,"• Grid met projectfoto's
+• Per project: naam event, locatie, datum, formaat
+• Link naar detail pagina's
+• Variatie in events tonen
+• Lokale projecten benadrukken
+• CTA: ""Jouw event hier""","→ Individuele realisatie pagina's
+→ /offerte/",🟠 HOOG,Social proof - zeer belangrijk voor conversie
+,,,,,,,,,
+FASE 3,/kennisbank/,Kennisbank LED-schermen,"LED scherm informatie, kennisbank",300-400,Kennisbank - Alles over LED-schermen,"• Overzicht alle kennisartikelen
+• Categorieën: techniek, prijzen, gebruik
+• Zoekfunctie (optioneel)
+• Nieuwste artikelen prominent","→ Alle kennisbank artikelen
+→ /offerte/",🟡 MEDIUM,Content hub voor SEO
+FASE 3,/kennisbank/wat-kost-een-ledscherm-huren/,Wat kost een LED-scherm?,"prijs ledscherm huren, kosten LED scherm",600-800,Wat kost een LED-scherm huren? [Prijzen 2025],"• Factoren die prijs bepalen: formaat, duur, transport
+• Vanaf-prijzen per formaat
+• Prijsvoorbeelden: 1 dag, weekend, week
+• Vergelijking met andere opties
+• Transparantie: wat is inbegrepen
+• CTA: ""Exacte prijs? Vraag offerte""","← /kennisbank/
+→ /ledscherm-huren/
+→ /offerte/",🟠 HOOG,Meest gezochte informatieve query - MUST HAVE
+FASE 3,/kennisbank/wat-is-pixelpitch/,Wat is pixel pitch?,"pixel pitch LED scherm, resolutie ledscherm",500-700,Wat is pixel pitch bij LED-schermen?,"• Uitleg pixel pitch eenvoudig
+• Relatie met kijkafstand
+• Welke pitch voor welk gebruik
+• Jouw schermen: specificaties
+• Visuele voorbeelden
+• Link naar product pagina's","← /kennisbank/
+→ /ledscherm-huren/6m2/",🟡 MEDIUM,Technisch artikel - trekt experts
+FASE 3,/kennisbank/indoor-vs-outdoor-ledscherm/,Indoor vs Outdoor LED,"indoor ledscherm, outdoor LED scherm verschil",500-700,Indoor vs Outdoor LED-scherm - Het verschil,"• Technische verschillen
+• Helderheid (nits) vergelijking
+• Wanneer welke kiezen
+• Jouw schermen: binnen + buiten inzetbaar
+• Weersbestendigheid
+• CTA naar verhuur","← /kennisbank/
+→ /ledscherm-huren/",🟡 MEDIUM,Helpt bij keuzeproces
+FASE 3,/kennisbank/content-tips-ledscherm/,Content tips LED-scherm,"content maken ledscherm, tips LED display",600-800,Content optimaliseren voor LED-schermen - 10 tips,"• Leesbaarheid op afstand
+• Kleurcontrast
+• Tekstgrootte
+• Video vs statisch
+• Duur per slide
+• Praktische checklist
+• Aanbod: ""Wij helpen met content""","← /kennisbank/
+→ /offerte/",⚪ LAAG,"Nice-to-have, helpt klanten"
+FASE 3,/kennisbank/ledscherm-huren-of-kopen/,LED-scherm huren of kopen?,"ledscherm kopen of huren, verhuur vs aankoop",600-800,LED-scherm huren of kopen? Vergelijk opties,"• Kostenvergelijking
+• Voordelen verhuur: flexibiliteit, geen onderhoud, geen investeringskosten
+• Wanneer kopen slim is (zeer frequent gebruik)
+• Focus op voordelen huren (jullie business)
+• Rekenvoorbeeld
+• CTA: ""Start met huren""","← /kennisbank/
+→ /ledscherm-huren/
+→ /offerte/",🟡 MEDIUM,Kan verkeer kapen van koop-zoekwoorden
