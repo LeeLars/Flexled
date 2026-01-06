@@ -1,15 +1,13 @@
-import { withPayload } from '@payloadcms/next/withPayload'
 import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
+  output: 'export',
+  basePath: '/Flexled',
+  assetPrefix: '/Flexled/',
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'res.cloudinary.com',
-      },
-    ],
+    unoptimized: true,
   },
+  trailingSlash: true,
 }
 
-export default withPayload(nextConfig)
+export default nextConfig
