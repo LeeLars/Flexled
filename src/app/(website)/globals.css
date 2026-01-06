@@ -1515,3 +1515,161 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--color-primary);
   color: var(--color-background);
 }
+
+/* ==================== TOEPASSINGEN PAGES ==================== */
+.toepassingen-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .toepassingen-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .toepassingen-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.toepassing-card {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background: var(--color-background);
+  border-radius: 1rem;
+  text-decoration: none;
+  transition: all 0.2s;
+  border: 2px solid transparent;
+}
+
+.toepassing-card:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-4px);
+}
+
+.toepassing-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.toepassing-card h2 {
+  color: var(--color-foreground);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.toepassing-card p {
+  color: var(--color-muted);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  flex: 1;
+}
+
+.toepassing-link {
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+/* Toepassing Detail */
+.toepassing-detail-grid {
+  display: grid;
+  gap: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .toepassing-detail-grid {
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+  }
+}
+
+.toepassing-beschrijving {
+  color: var(--color-muted);
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.toepassing-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.voordelen-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.voordelen-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  color: var(--color-muted);
+}
+
+.voordelen-list svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--color-primary);
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+}
+
+.voorbeelden-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.voorbeeld-tag {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: var(--color-background);
+  border-radius: 9999px;
+  color: var(--color-foreground);
+  font-size: 0.875rem;
+}
+
+/* Aanbevolen Scherm */
+.toepassing-sidebar {
+  position: sticky;
+  top: 100px;
+}
+
+.aanbevolen-scherm {
+  background: var(--color-background);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 2px solid var(--color-primary);
+}
+
+.aanbevolen-label {
+  display: inline-block;
+  background: var(--color-primary);
+  color: var(--color-background);
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.aanbevolen-scherm h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.aanbevolen-image {
+  aspect-ratio: 16/10;
+  background: var(--color-background-light);
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
