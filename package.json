@@ -1,0 +1,47 @@
+{
+  "name": "flexled",
+  "version": "1.0.0",
+  "description": "FlexLED - LED-scherm verhuur website",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "payload": "payload",
+    "generate:types": "payload generate:types"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeeLars/Flexled.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/LeeLars/Flexled/issues"
+  },
+  "homepage": "https://github.com/LeeLars/Flexled#readme",
+  "dependencies": {
+    "@payloadcms/db-postgres": "^3.70.0",
+    "@payloadcms/next": "^3.70.0",
+    "@payloadcms/richtext-lexical": "^3.70.0",
+    "graphql": "^16.12.0",
+    "next": "^15.5.9",
+    "payload": "^3.70.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "sharp": "^0.34.5"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "autoprefixer": "^10.4.23",
+    "eslint": "^9.39.2",
+    "eslint-config-next": "^16.1.1",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18",
+    "typescript": "^5.9.3"
+  }
+}
